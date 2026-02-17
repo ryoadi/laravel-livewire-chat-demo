@@ -1,6 +1,67 @@
 # Laravel Livewire Realtime Chat App
 A simple chat app, built with Laravel Livewire as it's core stack, showcasing ability to build a realtime chat app without relying on a frontend frameworks.
 
+## Installation
+
+### Prerequisites
+- **PHP 8.4** or higher
+- **Node.js 18** or higher
+- **Composer**
+- A database (SQLite, MySQL, PostgreSQL, etc.)
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd laravel-livewire-chat-demo
+   ```
+
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
+
+3. **Install Node dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Set up environment configuration**
+   ```bash
+   cp .env.example .env
+   ```
+   Edit `.env` and configure your database connection.
+
+5. **Generate application key**
+   ```bash
+   php artisan key:generate
+   ```
+
+6. **Run database migrations**
+   ```bash
+   php artisan migrate
+   ```
+
+7. **Seed the database (optional)**
+   ```bash
+   php artisan db:seed
+   ```
+
+8. **Build assets**
+   ```bash
+   npm run build
+   ```
+
+9. **Start development servers**
+
+   ```bash
+   composer dev
+   ```
+
+10. **Access the application**
+    Open your browser and navigate to `http://localhost:8000`
+
 ## Features
 - Add, edit, delete message
 - Realtime message update
